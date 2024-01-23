@@ -1,0 +1,15 @@
+.footer__wrapper
+  section.footer__title
+    p.footer__title-text
+      | cat
+      span.footer__title-text--slim energy
+  section.footer__social.social
+    ul.social__list
+      include mixins/social-items
+      +social__items('social__items--vk', 'мы в контакте.')
+      +social__items('social__items--telegram', 'мы в телеграм.')
+      +social__items('social__items--youtube', 'мы в youtube.')
+  section.footer__copyright.copyright
+    a.copyright__link(href='')
+      span.copyright__text HTML Academy
+      p.copyright__img
